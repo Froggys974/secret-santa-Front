@@ -3,10 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { GroupListComponent } from './components/group-list/group-list.component';
+import { GroupDetailComponent } from './components/group-detail/group-detail.component';
+import { GroupMembersComponent } from './components/group-members/group-members.component';
+import { GroupCreateComponent } from './components/group-create/group-create.component';
+import { SecretSantaComponent } from './components/secret-santa/secret-santa.component';
+import { InvitationsComponent } from './components/invitations/invitations.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent,
+    GroupListComponent,
+    GroupDetailComponent,
+    GroupMembersComponent,
+    GroupCreateComponent,
+    SecretSantaComponent,
+    InvitationsComponent
   ],
   imports: [
     BrowserModule,
