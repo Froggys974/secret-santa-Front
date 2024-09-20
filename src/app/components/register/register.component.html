@@ -1,1 +1,12 @@
-<p>register works!</p>
+<div class="register-container">
+    <app-form
+      [formTitle]="'Register'"
+      [formFields]="registerFields"
+      [submitButtonText]="'Sign up'"
+      (formSubmitted)="onRegister($event)">
+    </app-form>
+    <p class="login-link">
+      Already registered? <a routerLink="/login">Login here</a>
+    </p>
+  </div>
+  

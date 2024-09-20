@@ -12,6 +12,11 @@ import { GroupMembersComponent } from './components/group-members/group-members.
 import { GroupCreateComponent } from './components/group-create/group-create.component';
 import { SecretSantaComponent } from './components/secret-santa/secret-santa.component';
 import { InvitationsComponent } from './components/invitations/invitations.component';
+import { SharedModule } from './shared/shared.module'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http'; // Importation de HttpClientModule
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,11 @@ import { InvitationsComponent } from './components/invitations/invitations.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,12 @@
-<p>login works!</p>
+<div class="login-container">
+    <app-form
+      [formTitle]="'Login'"
+      [formFields]="loginFields"
+      [submitButtonText]="'Log In'"
+      (formSubmitted)="onLogin($event)">
+    </app-form>
+    <p class="register-link">
+      Don't have an account? <a routerLink="/register">Register here</a>
+    </p>
+  </div>
+  
